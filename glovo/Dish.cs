@@ -16,6 +16,17 @@ namespace glovo
             Name = name;
             Price = price;
         }
+
+        public static void DisplayAvailableDishes(List<Dish> dishes)
+        {
+            Console.WriteLine("\nAvailable dishes:");
+            for (int i = 0; i < dishes.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {dishes[i].Name} - ${dishes[i].Price}");
+            }
+        }
     }
+
+
 
 }
