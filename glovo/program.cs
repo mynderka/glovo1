@@ -62,7 +62,7 @@ namespace glovo
             // Створення списку ресторанів та кур'єрів (включаючи їх меню та ціни доставки)
             var restaurants = new List<Restaurant>
             {   
-            new Restaurant("Good Eats", "123 Main St", 4, "10:00 - 22:00", 5.0, new List<Dish> { new Dish("Borsch", 10.99m), new Dish("Varenyky", 12.49m), new Dish("Banosh", 11.29m), new Dish("Mushroom Soup", 9.99m) }, 3.0m),
+                
             new Restaurant("Tasty Bites", "456 Elm St", 5, "11:00 - 23:00", 7.5, new List<Dish> { new Dish("Burger", 8.49m), new Dish("Nuggets", 7.99m), new Dish("Fried Chicken", 9.99m), new Dish("Salad", 7.99m) }, 4.0m),
             new Restaurant("Spicy Kitchen", "789 Oak St", 3, "09:00 - 21:00", 3.2, new List<Dish> { new Dish("Tacos", 11.99m), new Dish("Burrito", 10.49m), new Dish("Enchiladas", 12.99m), new Dish("Quesadilla", 9.99m) }, 2.5m),
             new Restaurant("Fresh Delight", "321 Maple St", 4, "08:00 - 20:00", 9.8, new List<Dish> { new Dish("Sushi", 14.99m), new Dish("Ramen", 12.99m), new Dish("Udon", 11.99m), new Dish("Tempura", 13.49m) }, 3.5m),
@@ -91,7 +91,6 @@ namespace glovo
                 var selectedDish = selectedRestaurantAndDish.Item2;
 
                 // Вибір кур'єра
-                Console.WriteLine("\nAvailable couriers:");
                 Courier.DisplayAvailableCouriers(couriers);
                 int selectedCourierIndex = Program.ReadValidIndex("\nSelect a courier (enter number): ", couriers.Count);
 
