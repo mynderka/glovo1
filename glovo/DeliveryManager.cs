@@ -10,8 +10,6 @@ namespace glovo
     class DeliveryManager
     {
         
-        
-
         // Метод для відображення історії замовлень
         public static string DisplayOrderHistory(Client client)
         {
